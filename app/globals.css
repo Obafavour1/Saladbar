@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: none;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@layer utilities{
+  .maxContainer{
+    @apply max-w-[1440px] mx-auto
+  }
+  .sections{
+    @apply px-5 md:px-[100px] py-10 md:py-[60px] md:mt-[60px]
+  }
+
+  .cards{
+    @apply relative max-md:text-center mt-20 max-md:w-[300px] max-md:mx-auto mx-auto
+  }
+
+  .greenButton{
+    @apply py-4 px-5 text-white md:text-[16px] uppercase md:font-medium rounded-[8px] bg-greens-100 transition-all duration-300 
+  }
+
+  .whiteButton{
+    @apply  py-4 px-5 text-greens-100 rounded-[8px] bg-white border  border-greens-100 md:text-[16px] uppercase md:font-medium transition-all duration-300 hover:greenButton
+  }
+
+  .blackButton{
+    @apply  py-4 px-5 text-white rounded-[8px] bg-black border   md:text-[16px] uppercase md:font-medium transition-all duration-300 hover:greenButton
+  }
+
+  .headerText{
+    @apply text-[40px] leading-[50px] font-medium lg:text-[80px] lg:leading-[100px] lg:font-bold
+  }
+
+  .header3{
+    @apply max-sm:text-center font-semibold text-[24px] leading-[30px] md:font-[600] md:text-[40px] md:leading-[49.2px]
+  }
+
+  .header4{
+    @apply text-[20px] leading-[26px] font-[600] text-greens-500
+  }
+
+  .gridCenter{
+    @apply grid items-center justify-center text-center
+  }
+
+  .p1{
+    @apply md:text-[24px] md:font-medium md:leading-6
+  }
+
+  .p2{
+    @apply text-[16px] leading-6 md:text-[24px] font-normal md:leading-[36px]
+  }
+
+  .p3{
+    @apply text-[16px] leading-[24px] font-normal text-greens-400
+  }
+}
