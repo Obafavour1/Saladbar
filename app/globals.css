@@ -17,7 +17,11 @@
   }
 
   .cards{
-    @apply relative max-md:text-center mt-20 max-md:w-[300px] max-md:mx-auto mx-auto
+    @apply relative max-lg:text-center mt-20 max-lg:w-[300px]  mx-auto
+  }
+
+  .checkbox{
+    @apply w-5 h-5 border-2 border-black rounded-sm checked:bg-green-500 focus:outline-none cursor-pointer
   }
 
   .greenButton{
@@ -25,11 +29,11 @@
   }
 
   .whiteButton{
-    @apply  py-4 px-5 text-greens-100 rounded-[8px] bg-white border  border-greens-100 md:text-[16px] uppercase md:font-medium transition-all duration-300 hover:greenButton
+    @apply  py-4 px-5 buttonText text-black rounded-[8px] bg-white md:text-[16px] uppercase md:font-medium transition-all duration-300  hover:scale-105 
   }
 
   .blackButton{
-    @apply  py-4 px-5 text-white rounded-[8px] bg-black border   md:text-[16px] uppercase md:font-medium transition-all duration-300 hover:greenButton
+    @apply  py-4 px-5 buttonText text-white rounded-[8px] bg-black md:text-[16px] uppercase md:font-medium transition-all duration-300  hover:scale-105 
   }
 
   .headerText{
@@ -40,8 +44,13 @@
     @apply max-sm:text-center font-semibold text-[24px] leading-[30px] md:font-[600] md:text-[40px] md:leading-[49.2px]
   }
 
+  .header33{
+    @apply max-sm:text-center font-semibold text-[24px] leading-[30px] lg:font-[600] lg:text-[40px] lg:leading-[49.2px]
+  }
+
+
   .header4{
-    @apply text-[20px] leading-[26px] font-[600] text-greens-500
+    @apply text-[20px] leading-[26px] font-[600] text-greens-500 md:text-[32px] md:leading-10
   }
 
   .gridCenter{
@@ -57,6 +66,10 @@
   }
 
   .p3{
-    @apply text-[16px] leading-[24px] font-normal text-greens-400
+    @apply text-[16px] leading-[24px] font-normal text-greens-400 md:text-[20px] md:leading-[30px]
+  }
+
+  .buttonText{
+    @apply text-[16px] leading-5 font-medium
   }
 }

@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Serenity from "./components/Serenity";
 import Signature from "./components/Signature";
+import Slider from "./components/Slider";
 
 
 
@@ -14,6 +15,7 @@ export default function Home() {
     <div className="maxContainer">
       
       <Header/>
+      <Slider/>
       <About/>
       <Explore/>
       <Menu/>
