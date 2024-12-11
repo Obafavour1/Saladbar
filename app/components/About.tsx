@@ -4,7 +4,7 @@ import React from 'react'
 const About = () => {
   return (
     <section className='sections' >
-        <div className='grid gap-10 w-10/12 mx-auto'>
+        <div className='grid gap-10 md:w-10/12 mx-auto'>
             <div className='cards' >
                 <Image src='/custom.svg' alt='Custom Salad' width={315} height={315} className='absolute max-md:-top-20 md:w-[395px] md:h-[395px] md:-top-16 md:-left-12  max-md:right-1'/>
                 <div className=' max-md:pt-60 md:pl-96  max-md:mx-5 rounded-[32px] bg-greens-100 px-6 py-8 max-md:py-11 '>

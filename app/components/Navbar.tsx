@@ -5,7 +5,7 @@ import { HiOutlineMenuAlt3 } from 'react-icons/hi'
 
 const Navbar = () => {
   return (
-    <nav className='py-6 bg-white px-5 lg:px-[120px]'>
+    <nav className='py-6 bg-white px-5 lg:px-[90px] xl:px-[120px]'>
         <div className='flex justify-between items-center'>
             <Image src='/logosalad.svg' alt='Salad Logo' height={86} width={258} className='max-sm:w-[86px] max-sm:h-[29px]'/>
             <div className='hidden lg:flex gap-x-10 items-center justify-center'>
