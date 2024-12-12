@@ -15,20 +15,21 @@ export default {
           500:'#2C2F24'
         },
         wine:{
-          100:'#820032'
-        },
-        animation: {
-          slide: 'slide 50s linear infinite',
-        },
-        keyframes: {
-          slide: {
-            from: { transform: 'translateX(0)' },
-            to: { transform: 'translateX(-100%)' },
-          },
+          '100':'#820032'
         },
         
-
       },
+      
+      keyframes: {
+        slide: {
+          '10%': { transform: "translateX(0%)" },
+          '100%': { transform: "translateX(-200%)" },
+        },
+      },
+      animation: {
+        slide: 'slide 30s linear infinite',
+      },
+
       backgroundImage:{
         banner:"url('/saladHeader.svg')",
         mobile: "url('/mobileSaladHeader.svg')",
@@ -36,5 +37,7 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animate'),
+  ],
 } satisfies Config;

@@ -77,6 +77,17 @@ export const Slinding =[
     {id:9,name:'Homemade soup'},
     {id:10,name:'Citrus Dessert & Cakes'},
 
+    {id:11, name:'Custom salad'},
+    {id:12, name:'Custom grilled cheese'},
+    {id:13, name:'Signature salad'},
+    {id:14,name:'Homemade soup'},
+    {id:15,name:'Citrus Dessert & Cakes'},
+    {id:16, name:'Custom salad'},
+    {id:17, name:'Custom grilled cheese'},
+    {id:18, name:'Signature salad'},
+    {id:19,name:'Homemade soup'},
+    {id:20,name:'Citrus Dessert & Cakes'},
+
 
   
 

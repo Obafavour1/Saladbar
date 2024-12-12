@@ -4,14 +4,14 @@ import { FaRegCircle } from 'react-icons/fa'
 
 const Slider = () => {
   return (
-    <section className='max-md:-mt-12  absolute w-full'>
-      <div className=' w-full overflow-hidden  flex border-4 py-5 md:py-12 border-y-greens-100 bg-wine-100 text-white'>
-        <div className='flex w-full items-center'>
+    <section className='max-md:-mt-12   '>
+      <div className='  overflow-hidden whitespace-nowrap relative w-full border-4 py-5 md:py-12 border-y-greens-100 bg-wine-100 text-white'>
+        <div className='flex animate-slide '>
           
           {
-            Slinding.map(slide=>{
+            [...Slinding].map(slide=>{
               return(
-                <div className='flex w-full items-center ' key={slide.id}>
+                <div className='flex gap-5 justify-between w-full items-center ' key={slide.id}>
                   <div className='flex gap-x-5 w-[250px] md:w-[300px] items-center'>
                     <FaRegCircle className='text-greens-100 w-[12px] md:w-[24px]'/>
                     <p className='p33'>{slide.name}</p>
