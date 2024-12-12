@@ -64,3 +64,22 @@ export const MenuList =[
         img: '/citrus.svg'
     },
 ]
+
+export const Slinding =[
+    {id:1, name:'Custom salad'},
+    {id:2, name:'Custom grilled cheese'},
+    {id:3, name:'Signature salad'},
+    {id:4,name:'Homemade soup'},
+    {id:5,name:'Citrus Dessert & Cakes'},
+    {id:6, name:'Custom salad'},
+    {id:7, name:'Custom grilled cheese'},
+    {id:8, name:'Signature salad'},
+    {id:9,name:'Homemade soup'},
+    {id:10,name:'Citrus Dessert & Cakes'},
+
+
+  
+
+    
+    
+]

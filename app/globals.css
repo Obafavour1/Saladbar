@@ -69,7 +69,12 @@
     @apply text-[16px] leading-[24px] font-normal text-greens-400 md:text-[20px] md:leading-[30px]
   }
 
+  .p33{
+    @apply text-[16px] leading-[24px] font-normal text-white md:text-[20px] md:leading-[30px]
+  }
+
   .buttonText{
     @apply text-[16px] leading-5 font-medium
   }
 }
+
