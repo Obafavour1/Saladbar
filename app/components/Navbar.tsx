@@ -12,7 +12,7 @@ const Navbar = () => {
     //     setOpen(!open)
     // }
   return (
-    <nav className='py-6  bg-white px-5 lg:px-[90px] xl:px-[120px]'>
+    <nav className='py-6   bg-white px-5 lg:px-[90px] xl:px-[120px]'>
         <div className='flex justify-between items-center'>
             <Image src='/logosalad.svg' alt='Salad Logo' height={86} width={258} className='max-sm:w-[86px] max-sm:h-[29px]'/>
             <div className='hidden lg:flex gap-x-10 items-center justify-center'>
@@ -30,11 +30,12 @@ const Navbar = () => {
             <div className='lg:hidden cursor-pointer' onClick={()=>setOpen(!open)}><HiOutlineMenuAlt3 className='w-[30px] h-[30px]' /></div>
         </div>
         <div className={`${open? 'visible':'invisible'} lg:hidden`}>
-            <div  className={`fixed z-10 left-0 ${open ? " w-[60%] translate-x-0" :"w-[100%] translate-x-full"} fixed duration-300  bg-white w-full pb-10`} >
-                {/* <div className='flex justify-between py-5 px-4'>
+        
+            <div  className={`fixed z-10 top-0 left-0 ${open ? " w-[60%] translate-y-0" :"w-[100%] -translate-y-60"} fixed duration-300  bg-white w-full pb-10`} >
+                <div className='flex justify-between py-5 px-4'>
                     <Image src='/logosalad.svg' alt='Salad Logo' height={86} width={258} className='max-sm:w-[86px] max-sm:h-[29px]'/>
                     <div className='lg:hidden cursor-pointer' onClick={()=>setOpen(!open)}><HiOutlineMenuAlt3 className='w-[30px] h-[30px]' /></div>
-                </div> */}
+                </div>
                 <div className='grid gap-5 text-center'>
                     {
                         NavLinks.map(links=>{
@@ -45,7 +46,7 @@ const Navbar = () => {
                             )
                         })
                     }
-                    <a href="" className='greenButton w-fit mx-auto'>ORDER NOW</a>
+                    <a href="" className={`${open ?'greenButton w-fit mx-auto':'hidden'}`}>ORDER NOW</a>
                 </div>
             </div>
         </div>
