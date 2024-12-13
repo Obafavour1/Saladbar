@@ -6,7 +6,7 @@ import { HiOutlineMenuAlt3 } from 'react-icons/hi'
 import { useState } from 'react'
 
 const Navbar = () => {
-    const[open, setOpen]= useState(true)
+    const[open, setOpen]= useState(false)
 
     // const Click= () =>{
     //     setOpen(!open)
