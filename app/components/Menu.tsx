@@ -1,12 +1,14 @@
+'use client'
 import { MenuList } from '@/constant/data'
 import Image from 'next/image'
+import { Fade } from 'react-awesome-reveal'
 
 const Menu = () => {
   return (
     <section className='sections'>
         <div className=''>
           <div className='gridCenter'>
-            <h3 className='header3'>A Menu That&apos;s Dressed to Impress</h3>
+            <Fade><h3 className='header3'>A Menu That&apos;s Dressed to Impress</h3></Fade>
             <p className='p2 md:w-4/5 capitalize mx-auto mt-6 mb-8'>From signature creations to your Custom-Made masterpiece, every bite is a celebration of freshness and flavour</p>
           </div>
           {/* <div className='px-[26px] w-full mx-auto '> */}
