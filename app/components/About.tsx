@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import { Fade, Slide } from 'react-awesome-reveal'
+import { Fade, } from 'react-awesome-reveal'
 
 const About = () => {
   return (
